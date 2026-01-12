@@ -1,6 +1,7 @@
 ---
 name: systems-thinking
 description: Analyze problems using a Systems Thinking approach. Use when users mention "systems thinking," "systemic," "feedback loops," "unintended consequences," "root cause," "interconnected," or request analysis of complex, multi-factor problems. Guides conversation through questions and observations rather than prescriptive solutions.
+version: '0.1.0'
 ---
 
 # Systems Thinking Analysis
