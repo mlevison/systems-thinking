@@ -4,7 +4,7 @@ description: Analyze problems using a Systems Thinking approach. Use when users 
 license: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
 metadata:
   author: agilepainrelief.com
-  version: '0.1.1'
+  version: '0.2'
 ---
 
 # Systems Thinking Analysis
@@ -24,9 +24,15 @@ Guide users through systemic analysis by selecting the appropriate framework and
 
 3. **Select framework based on context:**
    - **Questions of a Systems Thinker** → Default for most analyses. See `references/questions-of-a-systems-thinker.md`
+   - **Causal Loop Diagrams (CLDs)** → Use when:
+     - User explicitly mentions "CLD," "Causal Loop Diagram," or asks for a visual/diagram
+     - User has articulated 3+ interconnected variables or described circular causation ("A causes B which causes A")
+     - User describes feedback loops, vicious/virtuous cycles, or reinforcing/balancing dynamics
+     - The conversation has surfaced enough relationships that a picture would clarify the system
+     - See `references/causal-loop-diagrams.md`
    - *(Future: Cynefin for complexity/uncertainty classification)*
 
-3. **Apply iteratively:**
+4. **Apply iteratively:**
    - Offer one lens or question at a time
    - Provide a one-sentence explanation of the concept
    - Ask a probing question to deepen the user's thinking
