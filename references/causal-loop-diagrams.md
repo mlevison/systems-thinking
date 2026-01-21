@@ -35,9 +35,7 @@ Trigger this skill when users:
 - If no → rephrase as something that can vary
 
 ### 2. Map Relationships
-
 For each pair of related variables, ask:
-
 **"If [Variable A] INCREASES, what happens to [Variable B]?"**
 
 **Two possible answers:**
@@ -49,7 +47,6 @@ For each pair of related variables, ask:
 - "And if we have LESS [A], we get LESS/MORE [B]?"
 
 ### 3. Identify Feedback Loops
-
 **Look for paths that circle back to where they started.**
 
 **Ask:** "Can you trace a path from [Variable X] that eventually leads back to [Variable X]?"
@@ -154,15 +151,14 @@ graph LR
 **Claude:** "Interesting! So Error Rate increases Stress Level. That's also a (+) relationship. You've just identified a reinforcing loop - stress creates errors, errors create more stress. Let me draw that..."
 ```mermaid
 graph LR
-    A([Stress Level]) -->|+| B([Error Rate])
-    B -->|+| C([Rework])
-    C -->|+| A
+    A([Stress Level]) -->|increases| B([Error Rate])
+    B -->|increases| C([Rework])
+    C -->|increases| A
 ```
 
 **Claude:** "This is a reinforcing loop (R) - it amplifies itself. What might break this cycle?"
 
 ## Integration with Parent Skill
-
 When used as part of systems-thinking:
 - CLDs visualize the feedback loops identified through "Questions of a Systems Thinker"
 - Use after establishing temporal orientation (CLDs work for both forward and backward analysis)
@@ -180,11 +176,11 @@ Always provide:
 **Example output:**
 ```mermaid
 graph LR
-    A([Customer Satisfaction]) -->|+| B([Referrals])
-    B -->|+| C([New Customers])
-    C -->|+| D([Revenue])
-    D -->|+| E([Service Investment])
-    E -->|+| A
+    A([Customer Satisfaction]) -->|increases| B([Referrals])
+    B -->|increases| C([New Customers])
+    C -->|increases| D([Revenue])
+    D -->|increases| E([Service Investment])
+    E -->|increases| A
 ```
 
 **Key loops:**
